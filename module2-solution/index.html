@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Module2-Solution</title>
+<style>
+	/*<link rel="stylesheet" type="text/css" href="css/mystyles.css">*/
+	/*type="text/css"*/
+	/* ***** Base styles ***** */
+	* {
+		box-sizing: border-box;
+		font-family: Verdana;
+	}
+	h1 {
+		text-align: center;
+		margin-bottom: 15px;
+		font-size: 200%
+	}
+
+	div.section {
+		border: 1px solid black;
+		width: 90%;
+		position: relative;
+		margin: auto;
+		margin-bottom: 25px;
+		background-color: #A19D9D;
+
+	}
+
+	h2 {
+		text-align: center;
+		float: right;
+		font-size: auto;
+		border: 1px solid black;
+		width: 33%;
+		height: 20%;
+		margin: auto;
+		background-color: #A52A2A;
+		position: relative;
+	}
+
+	p {
+		/*background-color: #A52A2A;*/
+		color: black;
+		text-align: justify;
+		margin-right: 5%;
+		margin-left: 5%;
+		margin-top: 10%;
+
+	}
+
+	.chicken {
+		background-color: #D68B8B
+	}
+	.beef {
+		color: white;
+		background-color: #A52A2A
+	}
+	.sushi {
+		background-color: #D9D06C
+	}
+	.salad {
+		background-color: #64D65E
+	}
+	.rice {
+		background-color: #FFFFFF
+	}
+	.drink {
+		background-color: #8EDDED
+	}
+
+	/*  Simple Responsive Framework.  */
+	.row {
+		width: 100%;
+	}
+
+	/*  ***Desktop devices only.***  */
+	@media (min-width: 992px){
+		.col-dt-1, .col-dt-2, .col-dt-3, .col-dt-4, .col-dt-5, .col-dt-6, .col-dt-7, .col-dt-8, .col-dt-9, .col-dt-10,     .col-dt-11, .col-dt-12 {
+			float: left;
+			border: 0px solid green;
+		}
+		.col-dt-1 {
+			width: 8.33%;
+		}
+		.col-dt-2 {
+			width: 16.66%;
+		}
+		.col-dt-3 {
+			width: 25%;
+		}
+		.col-dt-4 {
+			width: 33%;
+		}
+		.col-dt-5 {
+			width: 41.66%;
+		}
+		.col-dt-6 {
+			width: 50%;
+		}
+		.col-dt-7 {
+			width: 58.33%;
+		}
+		.col-dt-8 {
+			width: 66.66%;
+		}
+		.col-dt-9 {
+			width: 74.99%;
+		}
+		.col-dt-10 {
+			width: 83.33%;
+		}
+		.col-dt-11 {
+			width: 91.66%;
+		}
+		.col-dt-12 {
+			width: 100%;
+		}
+	}
+
+	/*  ***Tablet devices only.***  */
+	@media (min-width: 768px) and (max-width: 991px){
+		.col-tb-1, .col-tb-2, .col-tb-3, .col-tb-4, .col-tb-5, .col-tb-6, .col-tb-7, .col-tb-8, .col-tb-9, .col-tb-10,    .col-tb-11, .col-tb-12 {
+			float: left;
+			border: 1px solid green;
+		}
+		.col-tb-1 {
+			width: 8.33%;
+		}
+		.col-tb-2 {
+			width: 16.66%;
+		}
+		.col-tb-3 {
+			width: 25%;
+		}
+		.col-tb-4 {
+			width: 33%;
+		}
+		.col-tb-5 {
+			width: 41.66%;
+		}
+		.col-tb-6 {
+			width: 50%;
+		}
+		.col-tb-7 {
+			width: 58.33%;
+		}
+		.col-tb-8 {
+			width: 66.66%;
+		}
+		.col-tb-9 {
+			width: 74.99%;
+		}
+		.col-tb-10 {
+			width: 83.33%;
+		}
+		.col-tb-11 {
+			width: 91.66%;
+		}
+		.col-tb-12 {
+			width: 100%;
+		}
+	}
+
+	/*  ***Mobile devices only.***  */
+	@media (max-width: 767px){
+		.col-mb-1, .col-mb-2, .col-mb-3, .col-mb-4, .col-mb-5, .col-mb-6, .col-mb-7, .col-mb-8, .col-mb-9, .col-mb-10,    .col-mb-11, .col-mb-12 {
+			float: left;
+			border: 1px solid green;
+		}
+		.col-mb-1 {
+			width: 8.33%;
+		}
+		.col-mb-2 {
+			width: 16.66%;
+		}
+		.col-mb-3 {
+			width: 25%;
+		}
+		.col-mb-4 {
+			width: 33%;
+		}
+		.col-mb-5 {
+			width: 41.66%;
+		}
+		.col-mb-6 {
+			width: 50%;
+		}
+		.col-mb-7 {
+			width: 58.33%;
+		}
+		.col-mb-8 {
+			width: 66.66%;
+		}
+		.col-mb-9 {
+			width: 74.99%;
+		}
+		.col-mb-10 {
+			width: 83.33%;
+		}
+		.col-mb-11 {
+			width: 91.66%;
+		}
+		.col-mb-12 {
+			width: 100%;
+		}
+	}
+</style>
+</head>
+<body>
+<h1> Our Menu</h1>
+
+<div class="row">
+	<div class ="col-dt-4 col-tb-6 col-mb-12">
+		<div class="section">
+         <h2 class="chicken">Chicken</h2>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, molestias, cumque! Odio illum quisquam sint porro exercitationem natus in consectetur blanditiis sunt, dolor aliquam magnam necessitatibus nobis mollitia quo obcaecati!</p>
+      	</div>
+	</div>
+	<div class ="col-dt-4 col-tb-6 col-mb-12">
+		<div class="section">
+         <h2 class="beef">Beef</h2>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, molestias, cumque! Odio illum quisquam sint porro exercitationem natus in consectetur blanditiis sunt, dolor aliquam magnam necessitatibus nobis mollitia quo obcaecati!</p>
+      	</div>
+	</div>
+	<div class ="col-dt-4 col-tb-12 col-mb-12">
+		<div class="section">
+         <h2 class="sushi">Sushi</h2>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, molestias, cumque! Odio illum quisquam sint porro exercitationem natus in consectetur blanditiis sunt, dolor aliquam magnam necessitatibus nobis mollitia quo obcaecati!</p>
+      	</div>
+	</div>
+	<div class ="col-dt-4 col-tb-6 col-mb-12">
+		<div class="section">
+         <h2 class="salad">Salad</h2>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, molestias, cumque! Odio illum quisquam sint porro exercitationem natus in consectetur blanditiis sunt, dolor aliquam magnam necessitatibus nobis mollitia quo obcaecati!</p>
+      	</div>
+	</div>
+	<div class ="col-dt-4 col-tb-6 col-mb-12">
+		<div class="section">
+         <h2 class="rice">Rice</h2>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, molestias, cumque! Odio illum quisquam sint porro exercitationem natus in consectetur blanditiis sunt, dolor aliquam magnam necessitatibus nobis mollitia quo obcaecati!</p>
+      	</div>
+	</div>
+	<div class ="col-dt-4 col-tb-12 col-mb-12">
+		<div class="section">
+         <h2 class="drink">Drink</h2>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, molestias, cumque! Odio illum quisquam sint porro exercitationem natus in consectetur blanditiis sunt, dolor aliquam magnam necessitatibus nobis mollitia quo obcaecati!</p>
+      	</div>
+	</div>
+</div>
+
+</body>
+</html>
