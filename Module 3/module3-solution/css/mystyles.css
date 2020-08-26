@@ -1,0 +1,130 @@
+body {
+  font-size: 16px;
+  color: #000000;
+  background-color: #3e94ad;
+  font-family: 'Oxygen', sans-serif;
+}
+
+/** HEADER **/
+#header-nav {
+  background-color: #b0aca2;
+  border-radius: 0;
+  border: 0;
+}
+
+.navbar-brand {
+  padding-top: 25px;
+}
+.navbar-brand h1 { /* The name */
+  font-family: 'Arial', serif;
+  color: #3a598c;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list a {
+  color: #951C49;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1.5px solid #3e94ad;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+
+section {
+	text-align: justify;
+	float: right;
+	font-size: auto;
+	border: 1px solid black;
+	margin: auto;
+	background-color: #A52A2A;
+	position: relative;
+}
+
+h3.chicken-title {
+  text-align: center;
+}
+
+h2, h3 {
+	font-style: bold
+}
+
+div.chicken-description {
+	color: #000000;
+}
+
+section.row {
+  margin: auto;
+  padding-bottom: auto;
+}
+
+/* OUR MENU */
+#main-content.container {
+  padding-right: auto;
+  padding-left: auto;
+  padding-bottom: auto;
+}
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  #main-content.container {
+    width: auto;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  #main-content.container {
+    width: 970px;
+  }
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  #main-content.container {
+    width: 750px;
+  }
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 6vw; /* 1vw = 1% of viewport width */
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+
+}
+
+@media (max-width: 479px) {
+    div.chicken-description {
+    font-size: 5vw;
+  }
+}
